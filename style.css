@@ -37,6 +37,7 @@
   }
 
   .card h2 {
+      cursor: default;
       /* background-color: black;s */
       color: black;
       padding: 5px;
@@ -64,8 +65,14 @@
       align-self: center;
       color: black;
       background: none;
+      transition: all 0.4s ease;
 
   }
+
+  #usName::placeholder {
+      color: rgba(0, 0, 0, 0.441);
+  }
+
 
   #pass {
       width: 14em;
@@ -80,7 +87,11 @@
       color: black;
       background: none;
   }
-  
+
+  #pass::placeholder {
+      color: rgba(0, 0, 0, 0.441);
+  }
+
   #login {
       width: 14em;
       height: 4rem;
@@ -91,10 +102,11 @@
       align-self: center;
       background: none;
       border: 2px solid grey;
-      box-shadow: 0 0 10px rgb(0, 0, 0, 0.5)
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+      transition: all 0.3s;
   }
 
   #login:hover {
       scale: 1.1;
-      
+
   }
